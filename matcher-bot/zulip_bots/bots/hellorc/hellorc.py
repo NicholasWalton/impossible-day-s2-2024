@@ -5,7 +5,7 @@ from typing import Any, Dict
 from zulip_bots.lib import BotHandler
 
 
-class HelloWorldHandler:
+class HelloRcHandler:
     def usage(self) -> str:
         return """
         This is a boilerplate bot that responds to a user query with
@@ -16,11 +16,11 @@ class HelloWorldHandler:
         """
 
     def handle_message(self, message: Dict[str, Any], bot_handler: BotHandler) -> None:
-        content = "beep boop"
+        content = "hello rc"
         bot_handler.send_reply(message, content)
 
-        emoji_name = "wave"
+        emoji_name = "octopus"
         bot_handler.react(message, emoji_name)
 
 
-handler_class = HelloWorldHandler
+handler_class = HelloRcHandler
