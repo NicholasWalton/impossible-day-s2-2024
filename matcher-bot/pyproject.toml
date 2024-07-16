@@ -10,6 +10,9 @@ python = "^3.10"
 zulip-bots = "^0.9.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
